@@ -1,11 +1,14 @@
 <html>
 
 <head>
+    <!-- Scripts: projects.js -->
+    <script defer src="./projects.js"></script>
     <!-- Bootstrap: https://getbootstrap.com -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- local Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link rel="stylesheet" type="text/css" href="./projects.css">
 </head>
 
 <body>
@@ -16,8 +19,8 @@
         <div class="container">
             <div class="row">
                 <div class="col logo-flex-col">
-                    <img src="assets/images/jtexpo.png" alt="" class="logo-img">
-                    <div class="display-3 logo-main-text">JTexpo</div>
+                    <img onclick="window.location.href = '../index.html'" src="../assets/images/jtexpo.png" alt="" class="logo-img">
+                    <a href="../index.html" class="display-3 logo-main-text">JTexpo</a>
                 </div>
             </div>
             <div class="row">
@@ -38,30 +41,19 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8 text-center">
-                    <button onclick="window.location.href = './resume/resume.html';"
-                        class="btn btn-light btn-block main-btn">About Me</button>
+                <div class="col-sm-3">
+                    <div class="row">
+                        <button id="graph-rnn" class="btn btn-light btn-block project-btn"
+                            onclick="window.location.href = 'https://jtexpo.github.io/Graph_RNN'">Graph RNN</button>
+                    </div>
+                    <div class="row">
+                        <img src="../assets/images/Graph_RNN.png" class="img-fluid project-img" alt=""
+                            onclick="changeButtonColor(false, 'graph-rnn'); window.location.href = 'https://jtexpo.github.io/Graph_RNN'"
+                            onmouseover="changeButtonColor(true, 'graph-rnn')"
+                            onmouseout="changeButtonColor(false, 'graph-rnn')"
+                            >
+                    </div>
                 </div>
-                <div class="col-sm-2"></div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8 text-center">
-                    <button onclick="window.location.href = './projects/projects.html';"
-                        class="btn btn-light btn-block main-btn">Projects</button>
-                </div>
-                <div class="col-sm-2"></div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8 text-center">
-                    <button onclick="window.location.href = './blogs/blogs.html';"
-                        class="btn btn-light btn-block main-btn">Blogs</button>
-                </div>
-                <div class="col-sm-2"></div>
             </div>
         </div>
     </main>

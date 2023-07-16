@@ -1,0 +1,34 @@
+@font-face { font-family: Alexandria-Regular; src: url('../assets/fonts/Alexandria/static/Alexandria-Regular.ttf'); } 
+@font-face { font-family: Alexandria-Bold; src: url('../assets/fonts/Alexandria/static/Alexandria-Bold.ttf'); } 
+@font-face { font-family: Alexandria-Black; src: url('../assets/fonts/Alexandria/static/Alexandria-Black.ttf'); } 
+
+.resume-topic{
+    color:#F3AF56;
+    font-family: Alexandria-Black;
+    text-shadow: .2rem .2rem 0 #000;
+}
+.resume-text{
+    color:#FFF;
+    font-family: Alexandria-Regular;
+    text-shadow: .1rem .1rem 0 #000;
+}
+.experience-title{
+    color:#F3AF56;
+    font-family: Alexandria-Bold;
+    text-shadow: .2rem .2rem 0 #000;
+}
+.experience-sub{
+    color:#F3AF56;
+    font-family: Alexandria-Regular;
+    text-shadow: .1rem .1rem 0 #000;
+}
+.experience-img{
+    height: 5rem;
+    width: auto;
+}
+
+hr {
+    height: .3rem;
+    background-color: #FFF; 
+    border-radius: 2rem;
+  }

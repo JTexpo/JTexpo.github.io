@@ -1,0 +1,33 @@
+.project-btn {
+  background-color: #F3AF56;
+  color: #FFF;
+  font-size: 2rem;
+  font-family: Alexandria-Black;
+  text-shadow: .2rem .2rem 0 #000;
+  border-radius: .5rem .5rem 0rem 0rem;
+}
+
+.project-btn:hover,
+.project-btn:visited,
+.project-btn:focus{
+  background-color: #FFF !important;
+  color: #F3AF56 !important;
+}
+
+.project-btn:active {
+  background-color: #FFF !important;
+  color: orange !important;
+}
+
+.project-img {
+  border-radius: 0rem 0rem .5rem .5rem ;
+}
+
+.project-btn-img-hover{
+  font-size: 2rem;
+  font-family: Alexandria-Black;
+  text-shadow: .2rem .2rem 0 #000;
+  border-radius: .5rem .5rem 0rem 0rem;
+  background-color: #FFF !important;
+  color: #F3AF56 !important;
+}
