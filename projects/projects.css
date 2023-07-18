@@ -1,9 +1,11 @@
+@font-face { font-family: Alexandria-Bold; src: url('../assets/fonts/Alexandria/static/Alexandria-Bold.ttf'); } 
+
 .project-btn {
   background-color: #F3AF56;
   color: #FFF;
   font-size: 2rem;
-  font-family: Alexandria-Black;
-  text-shadow: .2rem .2rem 0 #000;
+  font-family: Alexandria-Bold;
+  text-shadow: .1rem .1rem 0 #000;
   border-radius: .5rem .5rem 0rem 0rem;
 }
 
@@ -25,8 +27,8 @@
 
 .project-btn-img-hover{
   font-size: 2rem;
-  font-family: Alexandria-Black;
-  text-shadow: .2rem .2rem 0 #000;
+  font-family: Alexandria-Bold;
+  text-shadow: .1rem .1rem 0 #000;
   border-radius: .5rem .5rem 0rem 0rem;
   background-color: #FFF !important;
   color: #F3AF56 !important;
