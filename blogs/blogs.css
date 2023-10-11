@@ -1,0 +1,31 @@
+hr {
+    height: .3rem;
+    background-color: #F3AF56; 
+    border-radius: 2rem;
+  }
+
+.blog-btn{
+    background-color: #F3AF56;
+    color: #FFF;
+    font-size: 2rem;
+    font-family: Alexandria-Black;
+    text-shadow: .1rem .1rem 0 #000;
+    border-radius: 2rem;
+}
+.blog-btn:hover,
+.blog-btn:visited,
+.blog-btn:focus{
+    background-color: #FFF !important;
+    color: #F3AF56 !important;
+}
+
+.blog-btn:active{
+    background-color: #FFF !important;
+    color: orange !important;
+}
+
+.blog-header{
+    color: #FFF;
+    font-family: Alexandria-Black;
+    text-shadow: .2rem .2rem 0 #000;
+}

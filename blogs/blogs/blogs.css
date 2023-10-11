@@ -1,0 +1,56 @@
+@font-face { font-family: Alexandria-Regular; src: url('../../assets/fonts/Alexandria/static/Alexandria-Regular.ttf'); } 
+@font-face { font-family: Alexandria-Bold; src: url('../../assets/fonts/Alexandria/static/Alexandria-Bold.ttf'); } 
+@font-face { font-family: Alexandria-Black; src: url('../../assets/fonts/Alexandria/static/Alexandria-Black.ttf'); } 
+
+/*
+----
+HTML
+----
+*/
+
+a{
+    color:#FFF;
+}
+a:hover{
+    color: #F3AF56;
+}
+
+/*
+----
+MAIN
+----
+*/
+.blog-header{
+    color: #F3AF56;
+    font-family: Alexandria-Black;
+    text-shadow: .2rem .2rem 0 #000;
+}
+
+.blog-info{
+    color:#FFF;
+    font-family: Alexandria-Regular;
+    text-shadow: .1rem .1rem 0 #000;
+}
+
+.blog-code{
+    color:#111;
+    font-family: Alexandria-Regular;
+    background-color: #EEE;
+    padding: .2rem ;
+    border-radius: .2rem;
+    text-shadow: 0rem 0rem 0 #111;
+}
+
+.blog-image{
+    border-radius: .2rem;
+    border-color: #000;
+    border-style: solid;
+    border-width: .2rem;
+}
+
+.source-link ,.source-link:visited{
+    color:#89CFEF;
+}
+.source-link:hover{
+    color: #1262da;
+}
