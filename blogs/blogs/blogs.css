@@ -34,7 +34,7 @@ MAIN
 
 .blog-code{
     color:#111;
-    font-family: Alexandria-Regular;
+    font-family: monospace;
     background-color: #EEE;
     padding: .2rem ;
     border-radius: .2rem;

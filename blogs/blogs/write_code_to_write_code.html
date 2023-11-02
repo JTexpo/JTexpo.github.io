@@ -1,0 +1,162 @@
+<html>
+
+<head>
+    <!-- Bootstrap: https://getbootstrap.com -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- local Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../../styles.css">
+    <link rel="stylesheet" type="text/css" href="./blogs.css">
+</head>
+
+<body>
+    <!-- Healthy Spacing -->
+    <br>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col logo-flex-col">
+                    <img onclick="window.location.href = '../../index.html'" src="../../assets/images/jtexpo.png" alt=""
+                        class="logo-img">
+                    <a href="../../index.html" class="display-3 logo-main-text">JTexpo</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="display-4 text-center">
+                        <a href="https://www.youtube.com/@JTexpo" target="_blank" class="logo-sub-text">
+                            Content To Tr<span style="color: #F3AF56;">AI</span>n Your Brain
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Healthy Spacing -->
+    <br>
+    <br>
+    <!-- Button Selector -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="display-4 blog-header">Write Code to Write Code</div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="h4 blog-info">
+                    By : JTexpo <br>
+                    Date : Nov 2nd 2023 <br><br>
+                    Table of Contents
+                    <ul>
+                        <li><a href="#problem-statement">Problem Statement</a></li>
+                        <li><a href="#mapping-use-case">Mapping Use Case</a></li>
+                        <li><a href="#code-writing-code-as-a-service">"Code Writing Code" as a Service</a></li>
+                        <li><a href="#closing-thoughts">Closing Thoughts</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <!-- Problem Statement -->
+            <div class="row">
+                <div id="problem-statement" class="h2 blog-header">Problem Statement</div>
+            </div>
+            <div class="row">
+                <div class="h4 blog-info">
+                    As developers, we often encounter a wide range of tasks; some involve complex algorithms, while others can be as mundane as mapping, displaying, or updating static data. 
+                    These repetitive tasks, though essential, can become time-consuming if done manually. <br><br>
+                    In the development process, these recurring tasks are not uncommon. 
+                    It's incumbent upon us to find ways to optimize our workload. 
+                    By doing so, we can allocate more time and focus on the creative and problem-solving aspects of our projects. <br><br>
+                    Take, for instance, my experience with the </span> <a class = "source-link" href="https://jtexpo.github.io/Starbucks_Kmeans/" target="_blank" >Starbucks Drink Recommendation App</a>. 
+                    I needed to create over 100 different fields for user selection. 
+                    Entering these manually was an option, but it would have eaten up a significant chunk of my time. <br><br>
+                </div>
+            </div>
+            <br><br>
+            <!-- Mapping Use Case -->
+            <div class="row">
+                <div id="mapping-use-case" class="h2 blog-header">Mapping Use Case</div>
+            </div>
+            <div class="row">
+                <div class="h4 blog-info">
+                    A developer often encounters tasks that, while crucial, can be remarkably tedious. 
+                    Mapping is a prime example;
+                    it involves taking a set of inputs and converting them into a standardized object used elsewhere in your codebase. <br><br>
+                    Imagine a scenario where a business provides you with a CSV file containing two columns. 
+                    Column A holds the payload of an object you're ingesting, while Column B indicates the corresponding field in your codebase's schema. 
+                    The instinctual solution for many developers might be manual mapping - a process that, unfortunately, can consume hours of valuable time. <br><br>
+                    Example task to preform: <br><br>
+                    <div class="h5 blog-code">
+                        my_class.first_name = their_class.first <br>
+                        my_class.last_name &emsp;= their_class.last <br>
+                        my_class.email &emsp;&emsp;&emsp;&emsp;&emsp;= their_class.email_address <br>
+                        ... <br>
+                        my_class.phone_cell = their_class.cellphone_number <br>
+                    </div>
+                    <br>
+                    Instead, consider the power of automation. 
+                    With just a few lines of code, you can achieve in seconds what might otherwise take hours: 
+                    <br><br>
+                    <div class="h5 blog-code">
+                        import csv <br>
+                        with open('mapping.csv', "r") as csv_file: <br>
+                        &emsp;&emsp;&emsp;&emsp;reader = csv.DictReader(csv_file) <br>
+                        &emsp;&emsp;&emsp;&emsp;for row in reader: <br>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;values = row.values() <br>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;print(f'my_class.{values[1]} = their_class.{values[0]}') <br>
+                    </div>
+                    <br>
+                    This practice of "code writing code" not only provides a significantly faster solution compared to manual mapping, but it also ensures uniformity and reduces the likelihood of errors. <br><br>
+                </div>
+            </div>
+            <div class="row">
+                <img class="mx-auto blog-image" src="../../assets/images/blogs/WCtWC_Meme.png" alt="">
+            </div>
+            <br><br>
+            <!-- "Code Writing Code" as a Service -->
+            <div class="row">
+                <div id="code-writing-code-as-a-service" class="h2 blog-header">"Code Writing Code" as a Service</div>
+            </div>
+            <div class="row">
+                <div class="h4 blog-info">
+                    Mundane coding tasks may demand mundane solutions, but this use case of "code writing code" also extends into complex situations. <br><br>
+                    One of my favorite automation tools, though not explicitly for code, is Nils Werner's VSCode extension </span> <a class = "source-link" href="https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring" target="_blank" >autoDocstring - Python Docstring Generator</a>. 
+                    This handy extension acts like a webhook, generating proper docstring templates for your Python code. 
+                    It ensures that your documentation remains clean and consistent. <br><br>
+                    Additionally, I find </span> <a class = "source-link" href="http://chat.openai.com/" target="_blank" >ChatGPT</a> to be an invaluable resource. 
+                    Manually writing test cases can be a tedious endeavor, but with properly documented code, ChatGPT has proven extremely helpful in automating this task. <br><br>
+                    On another note, GitHub offers a premium paid feature called </span> <a class = "source-link" href="https://github.com/features/copilot/" target="_blank" >GitHub Co-Pilot</a>, which excels in generating code snippets. <br><br>
+                </div>
+            </div>
+            <br><br>
+            <!-- Closing Thoughts -->
+            <div class="row">
+                <div id="closing-thoughts" class="h2 blog-header">Closing Thoughts</div>
+            </div>
+            <div class="row">
+                <div class="h4 blog-info">
+                    Unfortunately, tedious coding tasks are as unavoidable as taxes. 
+                    Whether you're adept at writing code to generate more code or prefer utilizing available services, there are options to handle these tasks efficiently. <br><br>
+                    I hope that this blog serves as inspiration for you to look into the many resources that can help you automate your development process!
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </main>
+    <!-- Healthy Spacing -->
+    <br>
+    <br>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="h4 footer-rights">&copy; 2023 Justin Tyler Esposito. All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
