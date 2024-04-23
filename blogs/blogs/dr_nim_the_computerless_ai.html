@@ -1,0 +1,177 @@
+<html>
+
+<head>
+    <!-- Bootstrap: https://getbootstrap.com -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- local Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../../styles.css">
+    <link rel="stylesheet" type="text/css" href="./blogs.css">
+</head>
+
+<body>
+    <!-- Healthy Spacing -->
+    <br>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col logo-flex-col">
+                    <img onclick="window.location.href = '../../index.html'" src="../../assets/images/jtexpo.png" alt=""
+                        class="logo-img">
+                    <a href="../../index.html" class="display-3 logo-main-text">JTexpo</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="display-4 text-center">
+                        <a href="https://www.youtube.com/@JTexpo" target="_blank" class="logo-sub-text">
+                            Content To Tr<span style="color: #F3AF56;">AI</span>n Your Brain
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Healthy Spacing -->
+    <br>
+    <br>
+    <!-- Button Selector -->
+    <main>
+        <div class="container">
+
+            <div class="row">
+                <div class="display-4 blog-header">Dr Nim the Computerless AI</div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="h4 blog-info">
+                    By : JTexpo <br>
+                    Date : April 22th 2024 <br><br>
+                    Table of Contents
+                    <ul>
+                        <li><a href="#what-is-nim">What is Nim?</a></li>
+                        <li><a href="#what-is-ai">What is AI?</a></li>
+                        <li><a href="#how-to-win-at-nim">How to Win at Nim</a></li>
+                        <li><a href="#dr-nim">1960's Dr Nim Board Game</a></li>
+                        <li><a href="#closing-thoughts">Closing Thoughts</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <!-- What is Nim? -->
+            <div class="row">
+                <div id="what-is-nim" class="h2 blog-header">What is Nim?</div>
+            </div>
+            <div class="row">
+                <div class="h4 blog-info">
+                    Nim is a two-player strategy game where players take turns removing objects from a pile. 
+                    Its origins can be traced back to China, where it is known as "Tsyan-Shidziou" or "Picking Stones." <br><br>
+                    There are two variations of the game, each having an opposing goal: 
+                </div>
+                <ol class="h4 blog-info">
+                    <li>Be the player who grabs the last object.</li>
+                    <li>Force your opponent to take the last object (known as Misère Nim).</li>
+                </ol>
+                <div class="h4 blog-info">
+                    <br>
+                    To prevent players from removing all of the objects in a single turn, both players must agree upon a minimum (usually one) and maximum amount of objects each must pull on their turn. <br><br>
+                </div>
+            </div>
+            <br><br>
+            <!-- What is AI? -->
+            <div class="row">
+                <div id="what-is-ai" class="h2 blog-header">What is AI?</div>
+            </div>
+            <div class="row">
+                <div class="h4 blog-info">
+                    Merriam-Webster defines artificial intelligence as: <br><br>
+                    <span style="color: #68FF92; font-family: Alexandria-Bold;">"The capability of computer systems or algorithms to imitate intelligent human behavior."</span><br>
+                    <a class = "source-link" href="https://www.merriam-webster.com/dictionary/artificial%20intelligence" target="_blank" >( merriam-webster.com )</a> <br><br>
+                    Fans of this site may be familiar with some AI algorithms such as Minimax, K-means, and Random Forests. 
+                    AI does not necessarily need to be as complex as large language models or image recognition; it can be something as simple as a random number generator picking moves for a game of tic-tac-toe.
+                    However, one approach is certainly more impressive than the other. <br><br>
+                    With this definition in mind, let's look at the logic for how the game Nim is played, and see where an algorithm which mimics intelligence can be discovered.<br><br>
+                </div>
+            </div>
+            <br><br>
+            <!-- How to Win at Nim -->
+            <div class="row">
+                <div id="how-to-win-at-nim" class="h2 blog-header">How to Win at Nim</div>
+            </div>
+            <div class="row">
+                <div class="h4 blog-info">
+                    The strategy to win Nim remains consistent regardless of the maximum pick, as long as the minimum pick is always 1. <br><br>
+                    Let's walk through a game of Nim where players can pick between 1 and 3 objects at a time from a pool of 4 objects. 
+                    We can observe that irrespective of the move made by the first player, the second player will always win if they grab the complement to the number of objects that the first player took. <br><br>
+                    The "complement", in this case, refers to the difference in the maximum number of objects that can be grabbed plus one (3 + 1 = 4) and the number of objects grabbed by the 
+                    first player; for example, if Player 1 grabbed one object, the complement would be three objects.<br><br>
+                    If the game now starts with 5 objects, Player 1 can win by picking 1 object, reducing the remaining objects to 4. 
+                    No matter what Player 2 does next, they will lose. <br><br>
+                    This strategy of reducing the objects to 4 works until we reach 8 objects, at which point Player 1 will lose because Player 2 will take the complement of what Player 1 takes, resetting the board to a state of 4. <br><br>
+                    This pattern continues indefinitely for every multiple of 4.
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <img class="mx-auto blog-image" src="../../assets/images/blogs/DrNim_meme.png" alt="">
+            </div>
+            <br><br>
+            <!-- 1960's Dr Nim -->
+            <div class="row">
+                <div id="dr-nim" class="h2 blog-header">1960's Dr Nim</div>
+            </div>
+            <div class="row">
+                <div class="h4 blog-info">
+                    Dr. Nim is a toy invented by John Thomas Godfrey in the mid-1960s. 
+                    The toy comprises a marble-powered plastic computer capable of playing the game of Nim. <br><br>
+                    Similar to the original game of Nim, Dr. Nim may be played with either the goal of taking the last marble or forcing your opponent to take it. <br><br>
+                    Due to its age, the game is difficult to find at an affordable price; 
+                    however, Instructables <a class = "source-link" href="https://www.instructables.com/The-Amazing-Dr-Nim-Scale-Model/" target="_blank" >( instructables.com )</a>, 
+                    which offers free instructions for various DIY projects, hosts a collection of STL files that replicate the game. 
+                    With a 3D printer, you can create the game of Nim for yourself. <br><br>
+                    The game operates by the AI automatically taking a number of balls corresponding to different lever configurations:
+                </div>
+                <ul class="h4 blog-info">
+                    <li>All levers down: 1 ball</li>
+                    <li>First lever up: 1 ball</li>
+                    <li>Second lever up: 3 balls</li>
+                    <li>Third lever up: 2 balls</li>
+                </ul>
+                <div class="h4 blog-info">
+                    <br>
+                    Brilliantly, under perfect play, this lever scheme will always result in taking the complement of the player's moves, totaling the balls taken to 4 per turn cycle. <br><br>
+                </div>
+            </div>
+            <br><br>
+            <!-- Closing Thoughts -->
+            <div class="row">
+                <div class="h2 blog-header">Closing Thoughts</div>
+            </div>
+            <div class="row">
+                <div id="closing-thoughts" class="h4 blog-info">
+                    Dr. Nim serves as a reminder that AI doesn't always have to be complex to qualify as AI. <br><br>
+                    While Dr. Nim may not be summarizing novels or writing code, its simplicity is admirable. 
+                    It prompts us to reflect on whether we sometimes overcomplicate our AI solutions to problems. <br><br>
+                    Are there any AI systems you feel are unnecessarily convoluted for their tasks? 
+                    How do you plan to simplify them?
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Healthy Spacing -->
+    <br>
+    <br>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="h4 footer-rights">&copy; 2024 Justin Tyler Esposito. All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
